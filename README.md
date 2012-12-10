@@ -11,7 +11,7 @@ Right now, there are only 2 methods
 
 ### Dependencies
 
-[superagent] (https://github.com/visionmedia/superagent)
+[superagent](https://github.com/visionmedia/superagent)
 
 ### Usage
 
@@ -24,7 +24,7 @@ npm install tvrage-x
 Then,
 
 ```
-var TVRage = require('tvrage-x').();
+var TVRage = require('tvrage-x')();
 
 TVRage.search('Castle', function(err, data){
     console.log(data);
@@ -35,6 +35,6 @@ TVRage.getEpisodeInfo({
         season: 5,
         episode: 5
     }, function(err, data){
-            console.log(data.show.episode.title);
+       console.log(data.show.episode.title);
 })
 ```
