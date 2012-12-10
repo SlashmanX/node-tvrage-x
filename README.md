@@ -4,6 +4,7 @@ This is essentially [this TVDB module](https://npmjs.org/package/thetvdb) rewrit
 Right now, there are only 2 methods
 
 `search` simply takes a string as input and returns a list of results
+
 `getEpisodeInfo` takes in an object containing the id of the series, the season number and the episode number
 
 
@@ -36,3 +37,4 @@ TVRage.getEpisodeInfo({
     }, function(err, data){
             console.log(data.show.episode.title);
 })
+```
