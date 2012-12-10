@@ -1,0 +1,29 @@
+{
+  "name": "tvrage-x",
+  "version": "0.0.1",
+  "description": "API client for TVRage (http://tvrage.com/)",
+  "keywords": [
+    "tv",
+    "TVRage"
+  ],
+  "author": {
+    "name": "Eoin Martin",
+    "email": "eoinmartin3007@gmail.com"
+  },
+  "bugs": {
+    "mail": "eoinmartin3007+tvRage@gmail.com"
+  },
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "dependencies": {
+    "superagent": "0.10.0"
+  },
+  "main": "./lib/tvrage",
+  "readme": "### About\nThis is essentially [this TVDB module](https://npmjs.org/package/thetvdb) rewritten to use the TVRage API.\n\nRight now, there are only 2 methods\n\n`search` simply takes a string as input and returns a list of results\n`getEpisodeInfo` takes in an object containing the id of the series, the season number and the episode number\n\n\n\n### Dependencies\n\n[superagent] (https://github.com/visionmedia/superagent)\n\n### Usage\n\nInstall from NPM with:\n\n```\nnpm install tvrage\n```\n\nThen,\n\n```\nvar TVRage = require('tvrage').();\n\nTVRage.search('Castle', function(err, data){\n    console.log(data);\n})\n\nTVRage.getEpisodeInfo({\n        showid: 19267,\n        season: 5,\n        episode: 5\n    }, function(err, data){\n            console.log(data.show.episode.title);\n})\n",
+  "_id": "tvrage-x@0.0.1",
+  "dist": {
+    "shasum": "faac95d745b9de4328c424b2a2c2518c9f3c7ea2"
+  },
+  "_from": "tvrage-x@0.0.1"
+}
